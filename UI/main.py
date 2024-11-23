@@ -7,9 +7,9 @@ import time
 
 def main(page: ft.Page):
 
-    # t = ft.Text(value= "Hello!", color="blue")
-    # page.controls.append(t)
-    # page.update()
+    t = ft.Text(value= "Hello!", color="blue")
+    page.controls.append(t)
+    page.update()
 
     t = ft.Text()
     s = ft.Text()
@@ -24,7 +24,7 @@ def main(page: ft.Page):
             else:
                 s.value = i
                 page.update()
-                time.sleep(0.01)
+                time.sleep(0.02)    
 
 ft.app(main)
 
